@@ -1,0 +1,12 @@
+{
+  "name": "socketIOsandbox",
+  "version": "0.0.1",
+  "private":"true",
+  "main": "index.js",
+  "author": "Matthew Ko",
+  "license": "MIT",
+  "dependencies": {
+    "lerna": "^4.0.0"
+  },
+  "workspaces": ["packages/*"]
+}

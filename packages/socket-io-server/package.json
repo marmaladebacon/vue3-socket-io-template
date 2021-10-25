@@ -1,0 +1,22 @@
+{
+  "name": "socket-io-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Matthew Ko",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/main.js",
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/main.js --target=node12.20"
+  },
+  "dependencies": {
+    "bufferutil": "^4.0.5",
+    "esbuild": "^0.13.8",
+    "express": "^4.17.1",
+    "socket.io": "^4.3.1",
+    "utf-8-validate": "^5.0.7"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.3",
+    "@types/node": "^16.11.1"
+  }
+}
