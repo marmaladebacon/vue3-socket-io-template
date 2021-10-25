@@ -2239,7 +2239,7 @@ esbuild-windows-arm64@0.13.9:
   resolved "http://artifactory.factset.com/artifactory/api/npm/npm/esbuild-windows-arm64/-/esbuild-windows-arm64-0.13.9.tgz#545bb58848008258b339b1b00fcfe92c85bc7251"
   integrity sha1-VFu1iEgAglizObGwD8/pLIW8clE=
 
-esbuild@^0.13.2, esbuild@^0.13.8:
+esbuild@^0.13.2, esbuild@^0.13.8, esbuild@^0.13.9:
   version "0.13.9"
   resolved "http://artifactory.factset.com/artifactory/api/npm/npm/esbuild/-/esbuild-0.13.9.tgz#aafc4b3375ac443ae7b223c26c4e58d10d2d535b"
   integrity sha1-qvxLM3WsRDrnsiPCbE5Y0Q0tU1s=
