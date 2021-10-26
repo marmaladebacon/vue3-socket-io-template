@@ -5,7 +5,7 @@
     "dev": "vite",
     "build:client": "vue-tsc --noEmit && vite build",
     "build:server": "esbuild src/server/main.ts --bundle --platform=node --outfile=dist/server/main.js --target=node12.20",
-    "build": "yarn build:client && yarn build:server" ,
+    "build": "yarn build:client && yarn build:server",
     "serve": "vite preview",
     "start": "node dist/server/main.js"
   },
@@ -13,6 +13,7 @@
     "esbuild": "^0.13.9",
     "express": "^4.17.1",
     "socket.io": "^4.3.1",
+    "socket.io-client": "^4.3.2",
     "vue": "^3.2.16"
   },
   "devDependencies": {

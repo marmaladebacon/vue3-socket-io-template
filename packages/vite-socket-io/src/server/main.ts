@@ -6,6 +6,8 @@ import {Server} from 'socket.io';
 //import { createServer as createViteServer } from 'vite'; 
 //const { createServer: createViteServer } = require('vite');
 
+let mainLoop:NodeJS.Timer;
+
 async function createCustomServer() {
   const app = express();
   const httpServer = createServer(app);
@@ -25,7 +27,12 @@ async function createCustomServer() {
   // app.use(vite.middlewares)
 
   io.on('connection', (socket) => {
-    console.log('connection established');
+    console.log(`connection established ${socket.id}`);
+    if(!mainLoop){
+      mainLoop = setInterval(()=>{
+        
+      }, 500);
+    }
   });
 
   app.get('/', async (req, res) => {
@@ -33,7 +40,7 @@ async function createCustomServer() {
     res.status(200).sendFile(path.join(__dirname+'/../index.html'));
   })
 
-  app.listen(3000)
+  httpServer.listen(3000);
 }
 
 createCustomServer();
